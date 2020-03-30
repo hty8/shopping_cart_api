@@ -68,8 +68,8 @@ Basic CRUD operations can also be done from the admin interface of Django and Dj
 
 ![django-admin](screenshots/django-admin.png)
 
-http://127.0.0.1:8000/cart/
-http://127.0.0.1:8000/products/
-http://127.0.0.1:8000/discounts/
+- http://127.0.0.1:8000/cart/
+- http://127.0.0.1:8000/products/
+- http://127.0.0.1:8000/discounts/
 
 ![drf-admin](screenshots/drf-admin.png)
