@@ -18,7 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cart/', include('cart.urls')),
-    path('discounts/', include('discounts.urls')),
-    path('products/', include('products.urls')),
+    path('cart/', include('shopping_cart_api.cart.urls')),
+    path('discounts/', include('shopping_cart_api.discounts.urls')),
+    path('products/', include('shopping_cart_api.products.urls')),
 ]
