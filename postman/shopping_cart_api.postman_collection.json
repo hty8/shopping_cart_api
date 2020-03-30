@@ -1,0 +1,958 @@
+{
+	"info": {
+		"_postman_id": "b385d952-1b39-48ad-8363-131eb3bece81",
+		"name": "shopping_cart_api",
+		"description": "Restful shopping api sample build with Django Rest Framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "List | category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/products/category/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get | category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/products/category/2/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"category",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create | category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\n            \"title\": \"Smartwatches\",\n            \"parent_category_id\": 4\n        }"
+						},
+						"url": {
+							"raw": "{{host}}/products/category/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update | category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\n            \"title\": \"Smartphones\",\n            \"parent_category_id\": 4\n        }"
+						},
+						"url": {
+							"raw": "{{host}}/products/category/5/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"category",
+								"5",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete | category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/products/category/6/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"category",
+								"6",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List | product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/products/product",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get | product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/products/product/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"product",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create | product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Clorox Disinfecting Wipes 75 pcs\",\n    \"category\": 3,\n    \"price\": \"129.99\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/products/product/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update | product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Apple iPhone 11 Pro 128 GB\",\n    \"category_id\": 4,\n    \"price\": \"9999.99\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/products/product/5/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"product",
+								"5",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete | product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/products/product/2/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"products",
+								"product",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "discounts",
+			"item": [
+				{
+					"name": "List | campaign",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/discounts/campaign/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"campaign",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get | campaign",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/discounts/campaign/3/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"campaign",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create | campaign ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"discount_type\": \"Rate\",\n    \"discount_rate\": 20,\n    \"discount_amount\": null,\n    \"min_purchased_items\": 3,\n    \"apply_to\": \"Category\",\n    \"target_product\": null,\n    \"target_category\": 2\n}"
+						},
+						"url": {
+							"raw": "{{host}}/discounts/campaign/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"campaign",
+								""
+							]
+						},
+						"description": "Creates fixed or percentage discount for category or single product"
+					},
+					"response": []
+				},
+				{
+					"name": "Update | campaign",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"discount_type\": \"Amount\",\n    \"discount_rate\": null,\n    \"discount_amount\": \"20\",\n    \"min_purchased_items\": 6,\n    \"apply_to\": \"Category\",\n    \"target_product\": null,\n    \"target_category\": 3\n}"
+						},
+						"url": {
+							"raw": "{{host}}/discounts/campaign/3/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"campaign",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete | campaign",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/discounts/campaign/4/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"campaign",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List | coupon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/discounts/coupon/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"coupon",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get | coupon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/discounts/coupon/1/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"coupon",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create | coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"minimum_cart_amount\": \"100.00\",\n    \"discount_rate\": 10\n}"
+						},
+						"url": {
+							"raw": "{{host}}/discounts/coupon/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"coupon",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update | coupon",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"minimum_cart_amount\": \"200.00\",\n    \"discount_percentage\": 15\n}"
+						},
+						"url": {
+							"raw": "{{host}}/discounts/coupon/1/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"coupon",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete | coupon",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/discounts/coupon/1/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"discounts",
+								"coupon",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "List | cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cart/cart",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get | cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cart/cart/1/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"cart",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get | cart checkout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cart/cart/checkout/3/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"cart",
+								"checkout",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create | cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 2,\n    \"item\": 3,\n    \"quantity\": 6\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cart/cart/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"cart",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update | cart",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 2,\n    \"item\": 5,\n    \"quantity\": 1\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cart/cart/2/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"cart",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete | cart",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/cart/cart/2/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"cart",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List | delivery-cost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cart/delivery-cost/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"delivery-cost",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get | delivery-cost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cart/delivery-cost/1/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"delivery-cost",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create | delivery-cost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"Passive\",\n    \"cost_per_delivery\": 10,\n    \"cost_per_product\": 4.50,\n    \"fixed_cost\": 2.99\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cart/delivery-cost/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"delivery-cost",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update | delivery-cost",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"Passive\",\n    \"cost_per_delivery\": 12,\n    \"cost_per_product\": 6,\n    \"fixed_cost\": 2.99\n}"
+						},
+						"url": {
+							"raw": "{{host}}/delivery-cost/2/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"delivery-cost",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete | delivery-cost",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/cart/delivery-cost/2/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"delivery-cost",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List | users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cart/user/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get | user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cart/user/3/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"user",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create | user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Jane Doe\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cart/user/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update | user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Janet Doe\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cart/user/3/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"user",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete | user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/cart/user/3/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cart",
+								"user",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1b9ff3d5-45ad-4723-9117-6ea2715dee71",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d1bf92e8-8564-4095-995b-2960e994031b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
