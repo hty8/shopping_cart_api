@@ -1,5 +1,4 @@
 # Shopping Cart API
-See instructions below for installation.
 
 ## Installation
 #### Install Python 3:
@@ -34,8 +33,13 @@ See instructions below for installation.
 ![test](screenshots/test-coverage.png)
 
 ## Sample Screenshots
+- List | Product
 ![List | Product](https://github.com/hty8/shopping_cart_api/blob/master/screenshots/2%20-%20List%20%7C%20Product%20.png?raw=true)
+- Create New Coupon
 ![Create New Coupon](https://github.com/hty8/shopping_cart_api/blob/master/screenshots/6%20-%20Create%20New%20Coupon.png?raw=true)
+- Update Existing Product
 ![Update Existing Product](https://github.com/hty8/shopping_cart_api/blob/master/screenshots/8%20-%20Update%20Existing%20Product.png?raw=true)
+- Cart Checkout Example 1
 ![Cart Checkout 1](https://github.com/hty8/shopping_cart_api/blob/master/screenshots/9%20-%20Cart%20Checkout%201.png?raw=true)
+- Cart Checkout Example 2
 ![Cart Checkout 2](https://github.com/hty8/shopping_cart_api/blob/master/screenshots/10%20-%20Cart%20Checkout%202.png?raw=true)
